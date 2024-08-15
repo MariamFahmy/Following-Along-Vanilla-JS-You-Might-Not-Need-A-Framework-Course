@@ -7,3 +7,6 @@ This repo is a companion to the [You Don't Need That Library][course] course on 
 [fem]: https://www.frontendmasters.com
 [website]: https://firtman.github.io/vanilla/
 [course]: https://frontendmasters.com/courses/vanilla-js-apps/
+
+**Course Notes**
+https://firtman.github.io/vanilla/
