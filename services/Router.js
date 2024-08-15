@@ -7,6 +7,7 @@ const Router = {
                 Router.go(url)         
             })
         })
+        
         // Event handler for URL changes
         window.addEventListener("popstate", event => {
             Router.go(event.state.route, false)
@@ -35,8 +36,8 @@ const Router = {
             default:
                 if (route.startsWith("/product-")) {
                     pageElement = document.createElement("details-page")
-                    const paramId = route.substring(route.lastIndex("-") + 1)
-                    pageElement.dataset.id = paramId
+                    const paramId = route.substring(route.lastIndexOf("-") + 1)
+                    pageElement.dataset.productId = paramId
                 }
         }
 
