@@ -7,6 +7,10 @@ const Router = {
                 Router.go(url)         
             })
         })
+        // Event handler for URL changes
+        window.addEventListener("popstate", event => {
+            Router.go(event.state.route, false)
+        })
 
         // Check the initial URL
         Router.go(location.pathname)
